@@ -3,7 +3,7 @@ using Sales.Shared.Entities;
 
 namespace Sales.API.Data
 {
-    //DataContext hereda de la clase DbContext que importamos(using Microsoft.EntityFrameworkCore;)
+    //Para conectarnos a la Base de Datos DataContext hereda de la clase DbContext que importamos(using Microsoft.EntityFrameworkCore;)
     public class DataContext : DbContext
     {
         //conectarme a la bd, con el costructor, option se lo paso a la clase que hereda base(options)

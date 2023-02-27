@@ -6,6 +6,7 @@ using Sales.Shared.Entities;
 
 namespace Sales.API.Controllers
 {
+    //probando cambios repositorio
     [ApiController] //Para que sea controlador
     [Route("/api/countries")] //Todas las peticiones que haga con "/api/countries" llegaran a este controlador
     public class CountriesController : ControllerBase //heredamos de controllerBase para que sea controlador

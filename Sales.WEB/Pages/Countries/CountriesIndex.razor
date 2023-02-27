@@ -4,13 +4,11 @@
 
 <h3>Paises</h3>
 
-@if(Countries is null)
-{
-    <p>Cargando...</p>
-}
-else
-{
-    <table class="table table-striped"> 
+<a class="btn btn-primary mb-3" href="/countries/create">Nuevo País</a>
+
+<GenericList MyList="Countries">
+    <Body>
+         <table class="table table-striped"> 
         <thead>
             <tr>
                 <th></th>
@@ -18,7 +16,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var country in Countries)
+            @foreach (var country in Countries!)
             {
                 <tr>
                     <td>
@@ -32,7 +30,9 @@ else
             }
         </tbody>
     </table>
-}
+
+    </Body>
+</GenericList>
 
 @code {
     public List<Country>? Countries { get; set; }

@@ -21,7 +21,7 @@ namespace Sales.WEB.Repositories
         public HttpResponseMessage HttpResponseMessage { get; set; }
 
         //metodos privados
-        public async Task<string?> GetErrorMessage()
+        public async Task<string?> GetErrorMessageAsync()
         {
             if (!Error)
             {
